@@ -29,7 +29,7 @@ au BufNewFile,BufRead *.py
 highlight BadWhitespace guibg=red ctermbg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufRead,BufNewFile *.js,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
@@ -56,3 +56,5 @@ set clipboard=unnamed
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
 set nu
+"Rainbow
+let g:rainbow_active = 1
